@@ -1,0 +1,108 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-image: url("https://imagens.ebc.com.br/QjlAr0ny4yNlczC7y_q11sz9B3w=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/sala_de_cinemaagencia_brasilia31122000938.jpg?itok=cln-l4lD");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.texto-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: #ffffff;
+  margin-bottom: 15px;
+  
+}
+
+input{
+  display: block;
+  margin: 15px auto;
+  padding: 10px 25px;
+  
+}
+.button {
+  border-radius: 4px;
+  background-color: #331ef4;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin: 15px auto;
+}
+
+.button span {
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#res{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: wrap;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+  margin-top: 15px;
+ 
+}
