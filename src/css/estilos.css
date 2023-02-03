@@ -1,7 +1,7 @@
 body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
   text-align: center;
-  background-image: url("https://imagens.ebc.com.br/QjlAr0ny4yNlczC7y_q11sz9B3w=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/sala_de_cinemaagencia_brasilia31122000938.jpg?itok=cln-l4lD");
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
   background-color: #000000;
   background-size: cover;
   background-position: center top;
@@ -34,33 +34,57 @@ body {
   right: 10px;
 }
 
-.texto-imagem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  color: #ffffff;
-  margin-bottom: 15px;
-  
+#listaFilmes img {
+  margin: 10px;
+  max-height: 250px;
+  margin-bottom:12px;
+  border-radius:6px;
 }
 
-input{
+#listaFilmes img:hover{
+  transform: scale(1.2);
+  transition-duration: 400ms;
+}
+
+#listaFilmes a {
+  display: inline-flex;
+  flex-direction: column;
+  height: 250px;
+  width: 180px;
+  margin: 1em 1em;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+ 
+}
+
+.form-wrapper {
+  margin: 0 0 15px;
+}
+
+.form-wrapper input {
   display: block;
   margin: 15px auto;
-  padding: 10px 25px;
-  
+  border-radius: 5px;
+  padding: 10px 15px;
 }
-.button {
-  border-radius: 4px;
-  background-color: #331ef4;
-  border: none;
-  color: white;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
+
+#mensagemDeErro{
+  color: #331ef4;
+  font-weight: bold;
+}
+
+.form-wrapper button {
+  border: 0;
+  color: #ffffff;
+  background: #331ef4;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  margin-top: 20px;
   cursor: pointer;
-  margin: 15px auto;
+  transition: 0.3s;
 }
 
 .button span {
@@ -84,25 +108,4 @@ input{
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-#res{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-flow: wrap;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-
-body > img {
-  margin: 0 10px;
-}
-
-img {
-  max-height: 250px;
-  margin-top: 15px;
- 
 }
